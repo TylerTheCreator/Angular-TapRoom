@@ -1,11 +1,12 @@
 import { Component } from 'angular2/core';
+import { Keg } from './keg.model'
 
 @Component({
   selector: 'my-app',
   template: `
     <div class="container">
       <h1>Keg</h1>
-      <h3 *ngFor="#keg of kegs">{{ keg.description }}</h3>
+      <h3 *ngFor="#keg of kegs" (click)="kegWasSelected(keg)">{{ keg.description }}</h3>
     </div>
   `
 })
@@ -18,10 +19,7 @@ export class AppComponent {
       new Keg("Red Elephant", 2)
     ];
   }
-}
-
-export class Keg {
-  public done: boolean = false;
-  constructor(public description: string, public id: number) {
+  kegWasSelected(clickedKeg: Keg): void {
+  console.log(clickedKeg);
   }
 }
