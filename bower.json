@@ -1,0 +1,21 @@
+{
+  "name": "Kegs",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Matthew Newell <mnewell10@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
